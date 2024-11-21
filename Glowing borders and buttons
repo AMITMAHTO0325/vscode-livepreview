@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    body {
+background-color: black;
+display: flex;
+justify-content: center;
+}
+.btn {
+   padding: 20px 100px;
+   background: rgba(255,255 ,255 , 0.10);
+   color:  whitesmoke;
+   border-radius: 40px;
+   position: relative;
+   top: 300px;
+   border: none;
+   font-size: 3rem;
+   cursor: pointer;
+}
+.btn:hover {
+   background: linear-gradient(90deg, #08ff08, #50e3fc, #bc13fe, #03a9f4, #0ff0fc, #ff0000, #0410ed, #09ee9a);
+   background-size: 500%;
+   z-index: 1;
+   animation: blink 5s linear infinite;
+}
+@keyframes blink{ 
+   from{
+   background-position:0%;
+}
+to{
+   background-position: 500%;
+}
+}
+.btn::after{
+   content: "";
+   position: absolute;
+   left: -10px;
+   right: -10px;
+   top: -10px;
+   bottom: -10px;
+   background: inherit;
+   border-radius: 100px;
+   filter: blur(100px);
+   opacity: 0;
+}
+.btn:hover::after{
+   opacity: 1;
+   z-index: -1;
+}
+.one {
+   text-align: right;
+   bottom: 30%;
+}
+</head> 
+<body>
+    <a id="two" href="2 index.html">this is for glowing border</a>
+    <button class="btn">Glowing Button</button>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    body {
+background-color: black;
+display: flex;
+justify-content: center;
+}
+.btn {
+   padding: 20px 100px;
+   background: rgba(255,255 ,255 , 0.10);
+   color:  whitesmoke;
+   border-radius: 40px;
+   position: relative;
+   top: 300px;
+   border: none;
+   font-size: 3rem;
+   cursor: pointer;
+}
+.btn:hover {
+   background: linear-gradient(90deg, #08ff08, #50e3fc, #bc13fe, #03a9f4, #0ff0fc, #ff0000, #0410ed, #09ee9a);
+   background-size: 500%;
+   z-index: 1;
+   animation: blink 5s linear infinite;
+}
+@keyframes blink{ 
+   from{
+   background-position:0%;
+}
+to{
+   background-position: 500%;
+}
+}
+.btn::after{
+   content: "";
+   position: absolute;
+   left: -10px;
+   right: -10px;
+   top: -10px;
+   bottom: -10px;
+   background: inherit;
+   border-radius: 100px;
+   filter: blur(100px);
+   opacity: 0;
+}
+.btn:hover::after{
+   opacity: 1;
+   z-index: -1;
+}
+.one {
+   text-align: right;
+   bottom: 30%;
+}
+</head> 
+<body>
+    <a id="two" href="2 index.html">this is for glowing border</a>
+    <button class="btn">Glowing Button</button>
+    
+</body>
+</html>
